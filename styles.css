@@ -1,0 +1,61 @@
+/* Resetando margens e paddings de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Organiza os elementos na vertical */
+  height: 100vh;
+  background-color: #4a3048;
+  margin: 0;
+}
+
+.titulo-principal {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaço entre o título e a calculadora */
+}
+
+.titulo-principal h1 {
+  color: rgb(14, 13, 13);
+  font-size: 2em; /* Ajuste o tamanho da fonte conforme preferir */
+}
+
+.calculadora {
+  background: rgb(152, 28, 107);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px; /* Define uma largura fixa para a calculadora */
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.botoes button {
+  width: 22%;
+  height: 50px;
+  font-size: 1.2em;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+  background-color: rgb(185, 185, 185); /* Cor ao passar o mouse */
+}
